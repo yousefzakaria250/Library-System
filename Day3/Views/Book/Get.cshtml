@@ -1,0 +1,16 @@
+﻿@using Day3
+@model IEnumerable<Book>
+
+<html>
+    <head></head>
+ <body>
+     <h1> List Of Book </h1>
+    @foreach(var book in Model)
+    {
+        <h1> @book.Title</h1>
+        <h2> @book.Description</h2>
+        <hr />
+    }
+</body>
+</html>
+
